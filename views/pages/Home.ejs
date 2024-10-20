@@ -1,0 +1,17 @@
+<% layout("layout/boilerplate.ejs") %>
+<h1>Hello</h1>
+
+<% if(SOS.length>0){ %>
+<div>
+  <% SOS.forEach(s => { %>
+  <div>
+    <h1>SOS id:<%= s.id %></h1>
+    <p>longitude: <%= s.longitude %> latitude: <%= s.latitude %></p>
+    <button onclick="location.href='/sos/<%=s.id%>'">Open</button>
+  </div>
+  <% }) %>
+</div>
+
+<% } else {%>
+<h1>No SOS</h1>
+<% } %>
