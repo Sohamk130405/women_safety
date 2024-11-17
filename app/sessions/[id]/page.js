@@ -51,7 +51,7 @@ export default function SOS() {
         <CardContent className="grid md:grid-cols-2 gap-4">
           <div>
             <p>
-              <strong>Device ID:</strong> {session.device_id}
+              <strong>Phone:</strong> {session.phone}
             </p>
             <p>
               <strong>User:</strong> {session.name}
